@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Static Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="app/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="app/assets/stylesheets/navbar-static-top.css" rel="stylesheet">
+    <link href="app/assets/stylesheets/my-styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <!-- form starts here -->
+        <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row jumbotron">
+        <!-- Main component for a primary marketing message or call to action -->
+        
+          <div class="col-sm-7">
+            <h1>Navbar example</h1>
+            <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+            <p>To see the difference between static and fixed top navbars, just scroll.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="bootstrap/components/#navbar" role="button">View navbar docs &raquo;</a>
+            </p>
+          </div>
+
+          <div class="col-sm-1">
+          </div>
+
+          
+            <form class="form-signin col-sm-4 well" role="form">
+              <h2 class="form-signin-heading">Sign Up</h2><hr>
+
+
+
+              <div class="form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail2">Email address
+                  </label>
+                  <input class="form-control-md" type="text" id="exampleInputEmail2" placeholder="First Name">
+                </div>
+                
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword2">Password
+                  </label>
+                  <input class="form-control-md" type="text" id="exampleInputPassword2" placeholder="Last Name"> 
+                </div>
+              </div>
+
+
+
+              <p></p><p><input type="email" class="form-control" placeholder="Email address" required autofocus></p>
+
+              <p><input type="email" class="form-control" placeholder="Type email again" required autofocus></p>
+              
+              <input type="password" class="form-control" placeholder="Password" required>
+               
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+          
+          
+        </div>
+      
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <h1>Hello, Rails!</h1>
+<%= link_to "My Blog", controller: "events" %>
+The link_to method is one of Rails' built-in view helpers. It creates a hyperlink based on text to display and where to go - in this case, to the path for posts.
+  </body>
+</html>

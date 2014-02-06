@@ -1,0 +1,18 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+
+
+
+/*My attempt at changing login to squared buttons :/ 
+form {
+	.border-radius(0) !important;
+	-webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+*/
