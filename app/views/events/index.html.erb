@@ -1,21 +1,27 @@
-<h1>Listing events</h1>
-<%= link_to 'New event', new_event_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-    <th></th>
-  </tr>
- 
-  <% @events.each do |event| %>
-    <tr>
-      <td><%= event.title %></td>
-      <td><%= event.text %></td>
-      <td><%= link_to 'Show', event_path(event) %></td>
-      <td><%= link_to 'Edit', edit_event_path(event) %></td>
-      <td><%= link_to 'Destroy', event_path(event),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="page-header">
+  <h1>All events</h1>
+</div>
+
+<%= link_to 'New event', new_event_path, class: "btn btn-primary" %>
+<p></p>
+<% @events.each do |event| %>
+<div class="event">
+  <strong><%= event.title %></strong>
+  <p><%= event.text %></p>
+  <div class="meta">
+    
+    <%= link_to time_ago_in_words(event.created_at) + " ago", event %>
+    <span class ="admin">
+      | <%= link_to "Edit", edit_event_path(event) %> |
+      <%= link_to "Delete", event, method: :delete, data: { confirm: "Are you sure?"} %>
+    </span>
+  </div>
+</div>
+<% end %>
+
+
+
+
+
+
+
