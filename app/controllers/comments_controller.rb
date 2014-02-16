@@ -1,7 +1,5 @@
 class CommentsController < ApplicationController
 
-	http_basic_authenticate_with name: "cjdealba", password: "secret", only: :destroy
-
 	def create
     @event = Event.find(params[:event_id])
     @comment = @event.comments.create(params[:comment].permit(:commenter, :body))

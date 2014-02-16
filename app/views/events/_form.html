@@ -1,4 +1,4 @@
-<%= form_for @event do |f| %>
+<%= simple_form_for @event do |f| %>
   <% if @event.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@event.errors.count, "error") %> prohibited
@@ -19,8 +19,9 @@
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
- 
+ <div class="form-actions">
   <p>
-    <%= f.submit %>
+    <%= f.button :submit %>
   </p>
+  </div>
 <% end %>
