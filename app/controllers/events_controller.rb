@@ -48,6 +48,10 @@ class EventsController < ApplicationController
 		redirect_to events_path
 	end
 
+def status_params
+      params.require(:status).permit(:name, :content, :user_id)
+    end
+    
 	private
 		def event_params
 			params.require(:event).permit(:title, :text)

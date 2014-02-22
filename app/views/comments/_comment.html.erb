@@ -1,7 +1,6 @@
 <p>
   <strong>Commenter:</strong>
-  <%= comment.user_id %>
-</p>
+  <%= comment.user.first_name %><%= comment.user.last_name %>
  
 <p>
   <strong>Comment:</strong>
@@ -12,4 +11,4 @@
   <%= link_to 'Destroy Comment', [comment.event, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
-</p>
+</p> 

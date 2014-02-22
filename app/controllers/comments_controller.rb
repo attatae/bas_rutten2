@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
 	def create
     @event = Event.find(params[:event_id])
-    @comment = @event.comments.create(params[:comment].permit(:commenter, :body))
+    @comment = @event.comments.create(params[:comment].permit( :body, :user, :user_id, :first_name))
     redirect_to event_path(@event)
   end
 
