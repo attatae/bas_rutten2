@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
-	before_filter :authenticate_user!, only: [:new]
+	before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
+	#added destroy to above, not in Treebook
 
 	def index
 		@events = Event.all 

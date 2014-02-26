@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
-before_filter :authenticate_user!, only: [:create]
+before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
+#added destroy, not in Treebook 
 
 	def create
     @event = Event.find(params[:event_id])
