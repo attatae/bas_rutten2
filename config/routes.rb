@@ -1,6 +1,12 @@
 Network::Application.routes.draw do
   devise_for :users, :controllers => {:registrations => "users/registrations"}
 
+  devise_scope :user do
+    get 'signup', to: 'devise/registrations#new' 
+    get 'signin', to: 'devise/sessions#new' 
+    # get 'logout', to: 'devise/sessions#destroy' 
+  end
+
   get "landing_page/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
