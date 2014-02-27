@@ -1,4 +1,5 @@
 Network::Application.routes.draw do
+  get "profiles/show"
   devise_for :users, :controllers => {:registrations => "users/registrations"}
 
   devise_scope :user do
@@ -15,6 +16,7 @@ Network::Application.routes.draw do
   end
   # You can have the root of your site routed with "root"
   root 'landing_page#index'
+  get '/:id', to: 'profiles#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
