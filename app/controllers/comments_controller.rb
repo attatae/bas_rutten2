@@ -4,7 +4,7 @@ before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destro
 
 	def create
     @event = Event.find(params[:event_id])
-    @comment = @event.comments.create(params[:comment].permit( :body, :user, :user_id, :first_name))
+    @comment = @event.comments.create(params[:comment].permit( :body, :user, :user_id, :first_name, :profile_name))
     redirect_to event_path(@event)
   end
 
