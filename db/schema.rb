@@ -14,15 +14,22 @@
 ActiveRecord::Schema.define(version: 20140216081744) do
 
   create_table "comments", force: true do |t|
+    t.string   "user"
+    t.string   "first_name"
+    t.integer  "user_id"
+    t.string   "name"
     t.text     "body"
     t.integer  "event_id"
+    t.integer  "user_id_id"
+    t.integer  "first_name_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   add_index "comments", ["event_id"], name: "index_comments_on_event_id"
+  add_index "comments", ["first_name_id"], name: "index_comments_on_first_name_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+  add_index "comments", ["user_id_id"], name: "index_comments_on_user_id_id"
 
   create_table "events", force: true do |t|
     t.string   "title"

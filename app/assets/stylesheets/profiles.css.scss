@@ -1,3 +1,26 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profile {
+	border-bottom: solid 1px #CCC;
+	padding: 7px 
+}
+
+.profile:hover {
+	background:#ebebeb
+}
+
+/*
+.event p {
+	margin: 4 px;
+}
+
+.event .admin {
+	display: none;
+}
+
+.event:hover .admin {
+	display: inline;
+}
+*/

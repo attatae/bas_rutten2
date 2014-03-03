@@ -1,11 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-
   text: MyText
+  user: christopher
 
 
 two:
-
   text: MyText
+  user: christopher
 
+three:
+  text: "Whup I'm Todd"
+  user: todd
