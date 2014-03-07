@@ -9,3 +9,9 @@ todd:
   last_name: "West"
   email: "todd@yahoo.net"
   profile_name: "todd4ev"
+
+lana:
+  first_name: "Lana"
+  last_name: "Smith"
+  email: "lsmith@yahoo.net"
+  profile_name: "L4Smith"
