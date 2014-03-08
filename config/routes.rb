@@ -8,6 +8,8 @@ Network::Application.routes.draw do
     # get 'logout', to: 'devise/sessions#destroy' 
   end
 
+  resources :relationships, only: [:create, :destroy]
+
   get "landing_page/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
