@@ -1,3 +1,22 @@
-<% if @followed_id %>
+<!--<% if @followed_id %>
 	<h1><%= @followed_id.full_name %></h1>
 <% end %>
+
+<%= form_for @user_friendship, method: :post do |form| %>
+	<div class="form form-actions">-->
+
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>

@@ -3,16 +3,52 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .event {
-	border-bottom: solid 1px #CCC;
-	padding: 7px 
+	padding: 10px;
+	margin-left: 20px;
+	margin-bottom: 8px;
+	background: #FAFAFA;
+	border-left: 2px solid #F0F0F0;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.event-present {
+	border: 1px solid white;
+
+	/*border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;*/
+}
+
+/*.comments {
+
+	background: #FAFAFA;
+	padding: 10px;
+	
+}*/
+
+#event-title {
+	/*font-color: black;*/
+	
+	/*border-bottom:10px dotted;*/
+}
+
+#event-index-title {
+	/*font-color: black;*/
+	text-decoration: underline;
+	/*border-bottom:10px dotted;*/
 }
 
 .event p {
-	margin: 4 px;
+	margin: 4px;
 }
 
 .event:hover {
-	background:#ebebeb
+	background:#ebebeb;
+	border-left: 2px solid #ebebeb;
+	border-bottom: 1px dotted #EBEBEB;
+}
+
+.event:hover a {
+	text-decoration: none;
 }
 
 .event .admin {
@@ -21,4 +57,11 @@
 
 .event:hover .admin {
 	display: inline;
+}
+
+#gray-time {
+	color: #919191;
+}
+#post-btn-margin {
+	margin-bottom: 12px;
 }

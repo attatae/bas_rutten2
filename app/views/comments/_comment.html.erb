@@ -1,7 +1,9 @@
+<div class="comments">
 <p>
-  <strong><%= comment.user.full_name %></strong>
-<p>
-  
+  <strong><%= comment.user.full_name %></strong> [LINK TO PROFILE PAGE]
+</p>
+
+<p>  
   <%= comment.body %>
 </p>
 
@@ -9,4 +11,7 @@
   <%= link_to 'Destroy Comment', [comment.event, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
-</p> 
+</p>
+</div>
+
+
