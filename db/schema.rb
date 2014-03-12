@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140307143842) do
 
   create_table "events", force: true do |t|
     t.string   "title"
+    t.date     "event_start"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,25 +1,25 @@
 <hr/>
 <div class="event-present">
-<div id="event-title">
-<h1>
-  <p>
-	  <%= @event.title %></span>
-	</p>
-</h1>
-</div>
+	<div id="event-title">
+		<h1>
+		  <p>
+			  <%= @event.title %></span>
+			</p>
+		</h1>
+	</div>
 
+	<p>
+		<h3><%= @event.event_start.strftime("%B %e, %Y") %></h3>
+	</p>
 	
-<p>
-  <%= @event.text %>
-</p>
+	<p>
+	  <%= @event.text %>
+	</p>
 
 </div>
 <hr/>
 
-
-
 <h3>Comments</h3>
-
 
 <p>
 	<%= render @event.comments %></p>
@@ -27,7 +27,6 @@
 
 <h4>Add a comment:</h4>
 <%= render "comments/form" %>
-
 
 <%= link_to 'Edit event', edit_event_path(@event) %> |
 <%= link_to 'Back to events', events_path %>

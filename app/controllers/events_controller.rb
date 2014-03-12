@@ -11,7 +11,7 @@ class EventsController < ApplicationController
 	end
 
 	def create #save our new event to a database
-		@event = Event.new(params[:event].permit(:title, :text))
+		@event = Event.new(params[:event].permit(:title, :text, :event_start))
 		#@event = current_user.events.new(params[:events])
 
 		#respond_to do|format|
@@ -66,7 +66,7 @@ class EventsController < ApplicationController
     
 	private
 		def event_params
-			params.require(:event).permit(:title, :text, :user_id)
+			params.require(:event).permit(:title, :text, :user_id, :event_start)
 		end
 end
 
