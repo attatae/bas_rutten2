@@ -6,12 +6,12 @@ class RelationshipTest < ActiveSupport::TestCase
 
   test "that the follow relationship works without raising an exception" do 
   	assert_nothing_raised do
-  		Relationship.create user: users(:christopher), friend: users(:lana)
+  		Relationship.create user: users(:chris), friend: users(:lana)
   	end
   end
 
   test "that creating a relationship based on follower id and followed id works" do
-  	UserFriendship.create follower_id: users(:christopher).id, followed_id: users(:todd).id
-  	assert users(:christopher).friends.include?(users(:todd))
+  	UserFriendship.create follower_id: users(:chris).id, followed_id: users(:todd).id
+  	assert users(:chris).friends.include?(users(:todd))
   	end
 end

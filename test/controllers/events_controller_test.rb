@@ -8,7 +8,7 @@ class EventsControllerTest < ActionController::TestCase
 	end
 
 	test "should render the new page when signed in" do 
-		sign_in users(:christopher)
+		sign_in users(:chris)
 		get :new 
 		assert_response :success
 	end
@@ -20,7 +20,7 @@ class EventsControllerTest < ActionController::TestCase
 	end
 
 	#test "should get edit when signed in" do 
-	#	sign_in users(:christopher)
+	#	sign_in users(:chris)
 	#	get :edit, id: @event 
 	#	assert_response :success
 	#end
@@ -32,7 +32,7 @@ class EventsControllerTest < ActionController::TestCase
 	#end
 
 	#test "should create event when logged in" do 
-	#	sign_in users(:christopher)
+	#	sign_in users(:chris)
 	#	
 	#	assert_difference('Event.count') do
 	#		post :create, event: { title: @event.title }

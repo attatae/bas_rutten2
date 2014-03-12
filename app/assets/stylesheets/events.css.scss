@@ -38,13 +38,15 @@
 }
 
 .event p {
-	margin: 4px;
+	margin: 0px;
 }
 
 .event:hover {
 	background:#ebebeb;
 	border-left: 2px solid #ebebeb;
 	border-bottom: 1px dotted #EBEBEB;
+	padding-left: 10px;
+	margin-left: 20px;
 }
 
 .event:hover a {

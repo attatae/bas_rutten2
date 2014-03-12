@@ -17,7 +17,7 @@ class UserTest < ActiveSupport::TestCase
 	end
 
 	test "a user can have a correctly formatted profile name" do 
-		user = User.new(first_name: 'Christopher', last_name: 'de Alba', email: 'cjdealba2@yahoo.net')
+		user = User.new(first_name: 'chris', last_name: 'de Alba', email: 'cjdealba2@yahoo.net')
 		user.password = user.password_confirmation = 'p4$$w0rd'
 
 		user.profile_name = 'hippocampus661'
@@ -35,7 +35,7 @@ class UserTest < ActiveSupport::TestCase
 
 	#test "that no error is raised when trying to access a friend list" do 
 	#	assert_nothing_raised do
-	#		users(:christopher).friends
+	#		users(:chris).friends
 	#	end
 	#end
 end

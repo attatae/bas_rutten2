@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20140307143842) do
     t.string   "title"
     t.date     "event_start"
     t.text     "text"
+    t.integer  "user_id"
+    t.text     "user"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

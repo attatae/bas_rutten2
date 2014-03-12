@@ -12,7 +12,7 @@ class RelationshipsControllerTest < ActionController::TestCase
 
   context "when logged in" do
   	setup do
-  		sign_in users(:christopher)
+  		sign_in users(:chris)
   	end
 
   	should "get new and return success" do 
@@ -42,7 +42,7 @@ class RelationshipsControllerTest < ActionController::TestCase
 
   	should "assign a new user following to the currently logged in user" do
   		get :new, follower_id: users(:todd).id 
-  		assert_equal users(:christopher), assigns(:relationship).follower
+  		assert_equal users(:chris), assigns(:relationship).follower
   	end
 
   	should "return a 404 status if no user is found to follow" do 
